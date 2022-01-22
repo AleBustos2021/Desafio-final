@@ -1,0 +1,69 @@
+.card:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    opacity: 1;
+    border: 1px solid $color-base;
+}
+
+#barra-sup {
+    .item-menu:hover {
+        color: white;
+    }
+}
+
+
+.imagen:hover {
+    transform: scale(1.04);
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: $color-base-2;
+    transition: all .3s ease-in-out;
+    color: white;
+}
+
+.logo {
+    transition: all .3s ease-in-out;
+    color: $color-base;
+    animation: wiggle 2s linear infinite;
+    background-size: cover;
+}
+.link-int:hover{
+    color: $color-base-2;
+}
+
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}

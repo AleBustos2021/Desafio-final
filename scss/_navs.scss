@@ -1,0 +1,21 @@
+#barra-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1em;
+}
+
+#barra-sup, #barra-footer {
+    background-color: $color-base-2;
+    font-size: 2em;
+}
+
+#barra-sup {
+     border-bottom: 2px solid $color-base;
+ }
+
+#barra-footer {
+    border-top: 2px solid $color-base;
+    color: white;
+}
+

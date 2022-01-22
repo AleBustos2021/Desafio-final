@@ -1,0 +1,21 @@
+.separador {
+    height: 20em;
+}
+
+.separador-color{
+    height: 15em;
+    width: 100%;
+    background: linear-gradient(to bottom, white, $color-base);
+}
+
+.separador-color-invertido{
+    height: 15em;
+    width: 100%;
+    background: linear-gradient(to bottom, $color-base, white);  
+}
+
+.separador-corto{
+    height: 10em;
+    width: 100%;
+ 
+}
