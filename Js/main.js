@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             nombre: 'Hombre con habano',
             precio: 1000,
-            imagen: './Images/carrito/6.jpg'
+            imagen: '../Images/carrito/6.jpg'
         },
         {
             id: 2,
             nombre: 'Hombre con gafas negras',
             precio: 2000,
-            imagen: './Images/carrito/2.jpg'
+            imagen: '../Images/carrito/2.jpg'
         },
         {
             id: 3,
