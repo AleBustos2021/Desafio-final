@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 6,
             nombre: 'Hombre con habano',
             precio: 1700,
-            imagen: './Images/carrito/1.jpg'
+            imagen: '../Images/carrito/1.jpg'
         }
 
     ];
