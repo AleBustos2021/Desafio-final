@@ -158,6 +158,15 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Vacia el carrito */
 
     function vaciarCarrito() {
+        Toastify({
+            text: "Se ha vaciado el carrito",
+            duration: 3000,
+            style: {
+                background: "linear-gradient(to bottom, rgb(117, 227, 231), black)",
+            },
+            position: 'right',
+            gravity: 'bottom'
+        }).showToast();
         carrito = [];
         renderizarCarrito();
         localStorage.clear();
