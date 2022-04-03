@@ -25,6 +25,7 @@
         <div class="navbar-nav">
           <a href="#" class="item-menu nav-item nav-link">Home</a>
           <a href="#container-items" class="item-menu nav-item nav-link">Social</a>
+          <a href="pages/carrito.html" class="item-menu nav-item nav-link">Comprar</a>
         </div>
         <div class="navbar-nav ms-auto">
           <a href="pages/contact.html" class="item-menu nav-item nav-link">Contacto</a>
@@ -172,6 +173,28 @@
   <div class="separador">
 
   </div>
+
+  <div class="container">
+    <h3>Ultimos visitantes</h3><br>
+    <div class="row">
+      <table class="table table-striped" id="tabla">
+      </table>
+    </div>
+  </div>
+
+  <script>
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(datos => {
+        let usuarios = '<tr><th>Nombre</th><th>Email</th><th>Ciudad</th></tr>';
+        for (let usuario of datos) {
+          usuarios += `<tr><td>${usuario.name}</td>
+                            <td>${usuario.email}</td>
+                            <td>${usuario.address.city}</td></tr>`;
+        }
+        document.getElementById("tabla").innerHTML = usuarios;
+      });
+  </script>
 
   <div class="separador">
 
